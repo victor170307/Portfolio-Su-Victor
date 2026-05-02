@@ -1,0 +1,31 @@
+/* Style commun pour les sections "effet verre" */
+.glass-section {
+    background: rgba(20, 20, 20, 0.6);
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Design des tags de compétences */
+.skills-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skill-tag {
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    font-size: 0.9rem;
+    background: rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background: #fff;
+    color: #000;
+    transform: scale(1.05);
+}
