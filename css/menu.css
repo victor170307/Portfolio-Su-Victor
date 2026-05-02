@@ -1,0 +1,39 @@
+.side-menu {
+    position: fixed;
+    right: -160px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(10, 10, 10, 0.9);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px 0 0 20px;
+    padding: 25px;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.side-menu:hover {
+    right: 0;
+}
+
+.menu-arrow {
+    color: #fff;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.menu-links {
+    list-style: none;
+}
+
+.menu-links li { margin: 15px 0; }
+
+.menu-links a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
