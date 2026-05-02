@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+    <div id="enter-screen">
+        <button id="start-btn">Entrer dans l'atelier</button>
+    </div>
+
+    <video id="intro-video" muted playsinline>
+        <source src="video/Intro.mp4.mp4" type="video/mp4">
+    </video>
+
+
+    <video id="bg-video" autoplay muted loop playsinline>
+        <source src="video/coco-loop.mp4" type="video/mp4">
+    </video>
+
+    <main id="content" class="hidden">
+        
+        <header class="hero">
+            <h1>Ton Prénom Nom</h1>
+            <p class="subtitle">Créatif & Développeur</p>
+        </header>
+
+        <section class="about-section">
+            <h2>À propos de moi</h2>
+            <p>Bienvenue dans mon univers. Je crée des expériences visuelles et interactives uniques.</p>
+        </section>
+
+        <section class="projects-section">
+            <h2>Mes Projets</h2>
+            <div class="projects-grid">
+                <div class="project-card">Projet 1</div>
+                <div class="project-card">Projet 2</div>
+                <div class="project-card">Projet 3</div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
