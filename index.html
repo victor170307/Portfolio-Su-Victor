@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <title>Portfolio | Atelier Créatif</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sections.css">
 </head>
 <body class="locked">
 
     <div id="enter-screen">
-        <button id="start-btn">Entrer dans l'atelier</button>
+        <button id="start-btn">ENTRER DANS L'ATELIER</button>
     </div>
 
     <video id="intro-video" muted playsinline>
         <source src="video/Intro.mp4.mp4" type="video/mp4">
     </video>
-
 
     <video id="bg-video" autoplay muted loop playsinline>
         <source src="video/coco-loop.mp4" type="video/mp4">
@@ -23,23 +24,53 @@
 
     <main id="content" class="hidden">
         
+        <div class="fixed-name">Su Victor</div>
+
+        <nav class="side-menu">
+            <div class="menu-arrow">←</div>
+            <ul class="menu-links">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Mes Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
         <header class="hero">
-            <h1>Ton Prénom Nom</h1>
+            
             <p class="subtitle">Créatif & Développeur</p>
         </header>
 
-        <section class="about-section">
+        <section id="about" class="glass-section">
             <h2>À propos de moi</h2>
-            <p>Bienvenue dans mon univers. Je crée des expériences visuelles et interactives uniques.</p>
+            <p>Étudiant en première année d’informatique à Ynov Paris Campus, je développe mes compétences en programmation et en développement web.
+Je réalise des projets en HTML, CSS et JavaScript afin de progresser et acquérir de l’expérience.
+Je suis actuellement à la recherche d’opportunités pour mettre en pratique mes compétences.</p>
         </section>
 
-        <section class="projects-section">
+        <section id="skills" class="glass-section">
+            <h2>Mes Compétences</h2>
+            <div class="skills-container">
+                <div class="skill-tag">Design UI/UX</div>
+                <div class="skill-tag">Montage Vidéo (CapCut)</div>
+                <div class="skill-tag">Développement Web</div>
+                <div class="skill-tag">JavaScript</div>
+                <div class="skill-tag">Animation CSS</div>
+            </div>
+        </section>
+
+        <section id="projects" class="glass-section">
             <h2>Mes Projets</h2>
             <div class="projects-grid">
                 <div class="project-card">Projet 1</div>
                 <div class="project-card">Projet 2</div>
                 <div class="project-card">Projet 3</div>
             </div>
+        </section>
+
+        <section id="contact" class="glass-section">
+            <h2>Contact</h2>
+            <p>Envie de collaborer ? Retrouvez-moi sur mes réseaux ou envoyez-moi un message.</p>
         </section>
 
     </main>

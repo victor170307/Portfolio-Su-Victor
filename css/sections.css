@@ -1,31 +1,28 @@
-/* Style commun pour les sections "effet verre" */
 .glass-section {
     background: rgba(20, 20, 20, 0.6);
-    padding: 40px;
+    padding: 60px; /* Aère l'intérieur du bloc */
     border-radius: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 80px; /* Écarte les blocs entre eux pour respirer */
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Design des tags de compétences */
+.glass-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px; /* Descend le texte par rapport au titre */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 15px;
+}
+
+.glass-section p {
+    line-height: 1.9; /* Écarte les lignes de texte pour la lisibilité */
+    font-size: 1.1rem;
+    color: #e0e0e0; /* Gris clair pour moins fatiguer les yeux */
+}
+
 .skills-container {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
-}
-
-.skill-tag {
-    padding: 10px 20px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 30px;
-    font-size: 0.9rem;
-    background: rgba(255, 255, 255, 0.05);
-    transition: all 0.3s ease;
-}
-
-.skill-tag:hover {
-    background: #fff;
-    color: #000;
-    transform: scale(1.05);
+    margin-top: 10px; /* Décolle les compétences du texte */
 }

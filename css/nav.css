@@ -1,9 +1,25 @@
+/* --- NOM FIXE (HAUT GAUCHE) --- */
+.fixed-name {
+    position: fixed;
+    top: 30px;
+    left: 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    z-index: 1100; /* Au-dessus de tout */
+    color: #fff;
+    mix-blend-mode: difference; /* Effet stylé : change de couleur selon le fond */
+    pointer-events: none; /* Pour ne pas gêner le clic ailleurs */
+}
+
+/* --- MENU LATÉRAL (DROITE) --- */
 .side-menu {
     position: fixed;
     right: -160px;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(10, 10, 10, 0.9);
+    background: rgba(10, 10, 10, 0.8);
     backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px 0 0 20px;
@@ -22,18 +38,17 @@
     color: #fff;
     margin-right: 20px;
     font-weight: bold;
+    cursor: pointer;
 }
 
-.menu-links {
-    list-style: none;
-}
-
+.menu-links { list-style: none; }
 .menu-links li { margin: 15px 0; }
-
 .menu-links a {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.85rem;
     letter-spacing: 1px;
+    transition: opacity 0.3s;
 }
+.menu-links a:hover { opacity: 0.6; }

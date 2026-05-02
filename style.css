@@ -73,11 +73,12 @@ body.locked {
 #content {
     position: relative;
     z-index: 10;
-    padding: 50px 20px;
-    max-width: 900px;
+    padding: 80px 20px; /* Espace global en haut et en bas de la page */
+    max-width: 800px; 
     margin: 0 auto;
     transition: opacity 1.5s ease;
 }
+
 
 .hidden {
     opacity: 0;
@@ -92,7 +93,7 @@ body.locked {
 /* --- STYLES DES TEXTES ET BOÎTES --- */
 .hero {
     text-align: center;
-    margin: 15vh 0 10vh 0;
+    margin: 10vh 0 10vh 0;
 }
 
 .hero h1 {
