@@ -35,12 +35,12 @@ document.addEventListener('DOMContentLoaded', () => {
             content.classList.remove('hidden');
             content.classList.add('visible'); 
             document.body.classList.remove('locked');
-        }, 500); // Transition beaucoup plus rapide !
+        }, 2000); 
     }
     
     intro.addEventListener('ended', transitionToPortfolio);
     intro.addEventListener('timeupdate', () => {
-        if (intro.currentTime >= (intro.duration - 0.8)) {
+        if (intro.currentTime >= (intro.duration - 0.1) && !isTransitionDone) {
             transitionToPortfolio();
         }
     });
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     transitionVideo.onended = () => {
                         if (bgVideo) {
-                            bgVideo.src = 'video/espace-loop.mp4';
+                            bgVideo.src = 'video/bulle-loop.mp4';
                             bgVideo.load();
                             bgVideo.play();
                         }
