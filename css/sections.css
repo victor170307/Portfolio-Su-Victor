@@ -1,8 +1,9 @@
 .glass-section {
     background: rgba(20, 20, 20, 0.6);
-    padding: 60px; /* Aère l'intérieur du bloc */
+    /* Le padding s'adapte à la taille de la boîte (ex: 8% d'espace vide à l'intérieur) */
+    padding: 6% 8%; 
     border-radius: 15px;
-    margin-bottom: 80px; /* Écarte les blocs entre eux pour respirer */
+    margin-bottom: 80px;
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -25,4 +26,37 @@
     gap: 15px;
     flex-wrap: wrap;
     margin-top: 10px; /* Décolle les compétences du texte */
+}
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    /* Chaque carte prend 30% de l'espace disponible */
+    flex: 1 1 30%; 
+    min-width: 200px; /* Sécurité : si on descend sous 200px, elles passent à la ligne */
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, background 0.3s;
+    cursor: pointer;
+}
+
+#transition-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 9999; /* Par-dessus absolument tout le site */
+    background-color: #000;
+    opacity: 0;
+    pointer-events: none; /* Inactif quand on ne la voit pas */
+    transition: opacity 0.5s ease;
+}
+
+#transition-video.active {
+    opacity: 1;
+    pointer-events: auto; /* Bloque les clics ailleurs pendant l'animation */
 }
