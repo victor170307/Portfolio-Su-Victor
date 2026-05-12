@@ -1,5 +1,4 @@
-/* --- NOM FIXE (HAUT GAUCHE) --- */
-.fixed-name {
+.fixed-name { /* Nom fixe en haut à gauche */
     position: fixed;
     top: 30px;
     left: 40px;
@@ -13,7 +12,6 @@
     pointer-events: none; /* Pour ne pas gêner le clic ailleurs */
 }
 
-/* --- MENU LATÉRAL (DROITE) --- */
 .side-menu {
     position: fixed;
     right: -160px;
